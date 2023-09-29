@@ -1,0 +1,52 @@
+@media screen and (max-width:1024px) {
+    
+}
+
+
+
+@media screen and (max-width:768px) {
+    /* header part css start */
+    #toggle{
+        display: block;
+    }
+
+    .nav{
+        display: none;
+    }
+
+    .drawer-side{
+        top: 80px;
+    }
+
+    /* header part css end */
+}
+
+
+@media screen and (max-width:580px) {
+    .search-btn{
+        display: none;
+    }
+
+    .side-search{
+        display: block;
+    }
+
+    /* nav part css start */
+
+    nav{
+        display: none;
+    }
+
+    /* nav part css end */
+}
+
+
+
+@media screen and (max-width:425px) {
+    
+}
+
+
+@media screen and (max-width:320px) {
+    
+}
