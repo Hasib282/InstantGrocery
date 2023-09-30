@@ -75,7 +75,7 @@ export default function Header() {
                                         </label>
                                     </li>
                                     <li><a href="#fruits"><GiFruitBowl />Fruits</a></li>
-                                    <li><a href="#vegitables"><GiPotato />Vegitables</a></li>
+                                    <li><a href="#vegetables"><GiPotato />Vegetables</a></li>
                                     <li><a href="#dairy"><GiMilkCarton />Dairy</a></li>
                                     <li><a href="#bakery"><GiSlicedBread />Bakery</a></li>
                                     <li><a href="#tea"><GiCoffeeCup />Tea & Coffee</a></li>

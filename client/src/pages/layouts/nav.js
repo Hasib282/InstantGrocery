@@ -7,7 +7,7 @@ export default function Nav() {
             <div className="navigation container">
                 <ul>
                     <li><a href="#fruits">Fruits</a></li>
-                    <li><a href="#vegitables">Vegitables</a></li>
+                    <li><a href="#vegitables">Vegetables</a></li>
                     <li><a href="#dairy">Dairy</a></li>
                     <li><a href="#bakery">Bakery</a></li>
                     <li><a href="#tea">Tea & Coffee</a></li>

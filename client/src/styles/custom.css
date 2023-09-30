@@ -4,7 +4,21 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 5px;
+    padding: 5px 12px;
+}
+
+
+header,#fruits,#vegetables,#dairy,#bakery,#tea,#meat{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent{
+    width: 100%;
+    display: grid;
+    
 }
 
 
@@ -19,10 +33,6 @@
 
 header{
     height: 80px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background-color:springgreen ;
     position: sticky;
     top: 0;
