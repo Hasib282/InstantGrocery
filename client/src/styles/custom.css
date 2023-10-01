@@ -111,7 +111,6 @@ form.search input {
 nav{
     background: #00ff7fb0;
     display: flex;
-    flex: column;
     justify-content: center;
 }
 
@@ -147,7 +146,6 @@ nav{
 
 .parent{
     width: 100%;
-    /* flex-wrap: wrap; */
 }
 
 .child{
@@ -195,9 +193,17 @@ nav{
     font-size: 14px;
 }
 
-
-
 /* card part css end */
+
+
+
+#add,#remove{
+    padding: 0 5px;
+    font-size: 20px;
+    width: 20px;
+}
+
+
 
 footer{
     background: #00ff7f;

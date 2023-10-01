@@ -2,10 +2,10 @@ import Footer from "./footer"
 import Header from "./header"
 import Nav from "./nav"
 
-export default function Layout({children}) {
+export default function Layout({children,cartData}) {
     return (
       <>
-        <Header/>
+        <Header cart={cartData}/>
         <Nav/>
         {children}
         <Footer/>

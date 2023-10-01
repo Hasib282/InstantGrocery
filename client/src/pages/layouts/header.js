@@ -2,7 +2,13 @@ import Link from "next/link";
 import { BsCart4 } from "react-icons/bs";
 import { FiMenu } from "react-icons/fi";
 import { GiFruitBowl, GiMilkCarton, GiSlicedBread, GiCoffeeCup, GiMeat, GiPotato } from "react-icons/gi";
-export default function Header() {
+import ShoppingCart from "../component/shoopingCart";
+import { useEffect, useState} from "react";
+
+
+export default function Header({ cart }) {
+    const carts = cart;
+    
 
     return (
 
@@ -28,10 +34,11 @@ export default function Header() {
                         <ul className="flex-align">
                             <li>
                                 <label className="btn btn-ghost btn-circle">
-                                    <div className="indicator">
-                                        <span className="icon"><label htmlFor="cart-modal"><BsCart4 /></label></span>
-                                        <span className="badge badge-sm indicator-item">8</span>
-                                    </div>
+                                    {carts != null && (
+                                        <div className="indicator">
+                                            <span className="icon"><label htmlFor="cart-modal"><BsCart4 /></label></span>
+                                            <span className="badge badge-sm indicator-item">{carts.length}</span>
+                                        </div>)}
                                 </label>
                             </li>
                             <li>
@@ -68,10 +75,11 @@ export default function Header() {
                                             <label htmlFor="login-modal">Login</label>
                                         </button>
                                         <label className="btn btn-ghost btn-circle">
-                                            <div className="indicator">
-                                                <span className="icon"><label htmlFor="cart-modal"><BsCart4 /></label></span>
-                                                <span className="badge badge-sm indicator-item">8</span>
-                                            </div>
+                                            {carts != null && (
+                                                <div className="indicator">
+                                                    <span className="icon"><label htmlFor="cart-modal"><BsCart4 /></label></span>
+                                                    <span className="badge badge-sm indicator-item">{carts.length}</span>
+                                                </div>)}
                                         </label>
                                     </li>
                                     <li><a href="#fruits"><GiFruitBowl />Fruits</a></li>
@@ -87,31 +95,9 @@ export default function Header() {
                     {/* toggle part end here  */}
                 </div>
             </header>
-
-            {/* cart modal part starts */}
-            <div className="cart-modal">
-                <input type="checkbox" id="cart-modal" className="modal-toggle" />
-                <div className="modal">
-                    <div className="modal-box">
-                        <h3 className="font-bold text-center text-3xl mb-5">Cart</h3>
-                        <table className="w-full">
-                            <thead>
-                                <tr>
-                                    <th>Products</th>
-                                    <th>Total</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <label className="modal-backdrop" htmlFor="cart-modal">Close</label>
-                </div>
-            </div>
-            {/* cart modal part ends */}
+            
+            {/* card modal */}
+            <ShoppingCart Cart={carts} />
 
 
             {/* login modal part starts */}
