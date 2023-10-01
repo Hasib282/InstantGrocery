@@ -1,5 +1,15 @@
 @media screen and (max-width:1024px) {
-    
+    /* cart part css start here */
+
+    .parent{
+        flex-wrap: wrap;
+    }
+
+    .child{
+        width: 22%;
+    }
+
+    /* cart part css end here */
 }
 
 
@@ -19,6 +29,27 @@
     }
 
     /* header part css end */
+
+
+    /* cart part css start here */
+
+    .parent{
+        flex-wrap: wrap;
+    }
+
+    .child{
+        margin: 2px;
+        padding: 5px;
+        width: 32%;
+    }
+
+    /* .child{
+        margin: 1px;
+        padding: 5px;
+        width: 48%;
+    } */
+
+    /* cart part css end here */
 }
 
 
@@ -38,15 +69,63 @@
     }
 
     /* nav part css end */
+
+
+    /* cart part css start here */
+    .tag{
+        display: none;
+    }
+    .container{
+        width: 98vw;
+    }
+
+    .parent{
+        flex-wrap: wrap;
+        
+    }
+
+    .child{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 46%;
+    }
+
+    .pname{
+        text-align: center;
+    }
+
+    /* cart part css end here */
 }
 
 
 
 @media screen and (max-width:425px) {
-    
+    /* cart part css start here */
+
+    .child{
+        margin: 1px;
+        padding: 5px;
+        width: 48%;
+    }
+
+    /* cart part css end here */
 }
 
 
 @media screen and (max-width:320px) {
+    /* cart part css start here */
+
+    .container{
+        width: 100vw;
+    }
+
+    .child{
+        margin: 1px;
+        padding: 5px;
+        width: 49%;
+    }
+
+    /* cart part css end here */
     
 }

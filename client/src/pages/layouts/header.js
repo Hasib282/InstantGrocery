@@ -8,7 +8,7 @@ export default function Header() {
 
         <>
             <header>
-                <div className="header">
+                <div className="header flex-align">
                     <div className="logo">
                         <Link href="index.html">
                             <picture>
@@ -24,8 +24,8 @@ export default function Header() {
                             <input type="text" placeholder="Search" className="input input-bordered w-auto" name="search" />
                         </form>
                     </div>
-                    <div className="nav">
-                        <ul>
+                    <div className="nav flex-align">
+                        <ul className="flex-align">
                             <li>
                                 <label className="btn btn-ghost btn-circle">
                                     <div className="indicator">
