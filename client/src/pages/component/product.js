@@ -9,7 +9,7 @@ function Product({ product, onAddToCart }) {
         <>
             <div className="child" >
                 <div className="image">
-                    <img src={`http://localhost:8000/product/image/` + product.image} alt={product.name} />
+                    <img src={`${process.env.NEXT_PUBLIC_URL}image/` + product.image} alt={product.name} />
                 </div>
                 <div className="pname">
                     <p>{product.name}</p>

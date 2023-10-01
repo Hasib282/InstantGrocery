@@ -75,7 +75,7 @@ function ShoppingCart({ Cart }) {
                                         <td>
                                             <div className='cartDetails flex-align'>
                                                 <div className='cartProduct w-5/12 mr-10'>
-                                                    <img src={`http://localhost:8000/product/image/` + item.image} alt={item.name} />
+                                                    <img src={`${process.env.NEXT_PUBLIC_URL}image/` + item.image} alt={item.name} />
                                                 </div>
                                                 <div className='cartquantity flex-column'>
                                                     <p>{item.name}</p>
